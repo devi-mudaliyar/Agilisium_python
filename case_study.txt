@@ -1,0 +1,117 @@
+
+Implement a group_by_owners function that:
+
+Accepts a dictionary containing the file owner name for each file name.
+Returns a dictionary containing a list of file names for each owner name, in any order.
+
+For example, input:-
+ {'Input.txt': 'Randy', 'Code.py': 'Stan', 'Output.txt': 'Randy'} 
+output:-
+ {'Randy': ['Input.txt', 'Output.txt'], 'Stan': ['Code.py']}.
+ 
+ 
+---------------------------------------------------------------------------------------------------------------------------- 
+A valid postal code  have to fullfil both below requirements:
+
+ must be a number in the range from 100000  to 999999  inclusive.
+ must not contain more than one alternating repetitive digit pair.
+Alternating repetitive digits are digits which repeat immediately after the next digit. In other words, an alternating repetitive digit pair is formed by two equal digits that have just a single digit between them.
+
+For example:
+
+121426 # Here, 1 is an alternating repetitive digit.
+523563 # Here, NO digit is an alternating repetitive digit.
+552523 # Here, both 2 and 5 are alternating repetitive digits.
+----------------------------------------------------------------------------------------------------------------------------
+
+You are given a string S . Suppose a character 'c' occurs consecutively X times in the string. Replace these consecutive occurrences of the character 'c' with (X,c)  in the string.
+
+input:-
+  1222311
+output:-
+  (1, 1) (3, 2) (1, 3) (2, 1)
+
+----------------------------------------------------------------------------------------------------------------------------
+a. Python Program to Accept a Hyphen Separated Sequence of Words as Input and Print the Words in a Hyphen-Separated Sequence after Sorting them Alphabetically
+
+b. Python Program to Print the Pascal's triangle for n number of rows given by the user
+
+----------------------------------------------------------------------------------------------------------------------------
+Implement a priority queue ADT in Python by keeping the data sorted in such a way that each front operation can be performed by one access to the list.
+
+----------------------------------------------------------------------------------------------------------------------------
+you are required to develop a simple Soccer Player Management and Visualisation System. The system is based on the European Soccer Database (https://www.kaggle.com/hugomathien/soccer) on Kaggle (https://www.kaggle.com/), which is a
+platform for predictive modeling and analytics competitions based on the datasets uploaded by companies and users. The soccer player database has been preprocessed and saved in the Players.txt file, which can be downloaded from here
+(https://doms.csu.edu.au/csu/file/5da98178-b8e6-49f7-b540-04a558117838/1/Players.txt). The first line of the file contains the attribute name: "Player ID", "Play Name", "Age", "Height", and "Weight", and each following line contains a record for a player. The system allows a user to add, search and visualise the details of players.The main program should first display a menu as follows. A user needs to select an operation from the main menu.
+=======================================================
+Welcome to the Soccer Player Management and Visualisation System
+<A>dd details of a player.
+<S>earch student details for a player.
+<V>isualize student details.
+<Q>uit.
+=======================================================
+Please select an option from the above:
+If a user chooses the option <A> the program then asks them to enter a player’s ID, name, and the age,height and weight one by one. Once all details for a player are entered it will display the player ID, name, age, height, and weight. Then the details of the player is added to the end of the Players.txt.Note that the player ID should not be the same as those already exist in the txt file and the format of the newly added record should be consistent with that of existing records.
+Once the new record has been added, the system will then ask the user 'Do you want to enter details for another player (Y/N)?' If they enter 'Y' the system will allow them to enter details for another student as before, if they enter 'N' the system will display the main menu again, otherwise it will ask the same question again. A typical example of the display of the program (once a user chooses the option <A>) can be as follows. Your program MUST follow the same display style.
+
+Please enter the player ID: 000011000
+Please enter the player name: Lionel Messi
+Please enter the age: 30
+Please enter the height: 169
+Please enter the weight: 72
+Thank You!
+The details of the player you entered are as follows:
+Player ID: 000011000
+Player name: Lionel Messi
+Age: 30
+Height: 169
+Weight: 72.0
+The record has been successfully added to the Player.txt file.
+Do you want to enter details for another plaer (Y/N)? N
+=================================================================
+Welcome to the Soccer Player Management and Visualisation System
+<A>dd details of a player.
+<S>earch player details for a player.
+<V>isualise player details.
+<Q>uit.
+=================================================================
+Please select an option from the above:
+After the operation, the Players.txt file will have the following content after the details of Lionel Messi
+are entered.
+
+
+If a user chooses the option <S> from the main menu then the program asks the user to enter the player ID for whom they want to see details. To facilitate the search option you need to use an appropriate data structure such as List. The program then collects the player details from the Players.txt file and displays it as follows (assuming the following player was searched for). 
+
+Please enter the player ID you want to search: 000011000
+Thank You!
+One player has been found:
+Player ID: 000011000
+Player name: Lionel Messi
+Age: 30
+Height: 169
+Weight: 72.0
+Do you want to search for another player (Y/N)? N
+After displaying the player information the program prompts the user with the following message, 'Do you want to search for another player (Y/N)?' If a user enters 'Y' then the program asks them to enter the player ID for whom the information needs to be searched and displayed, else if the user enters 'N' then the program displays the main menu, otherwise the program prompts the same message again. If a user chooses the option <V> from the main menu, then the program asks the user to enter one attribute name from "Age", "Height", and "Weight" for visualisation.
+1. Age 2. Height 3. Width
+Please select the attribute you want to visualise: 1
+For example, if the user selects "Age", the program will display the histogram of the ages of all the players. To show the histogram, you will need to use some 2D plotting libraries such as Matplotlib (https://matplotlib.org/). Note that you need to appropriately choose the bin number to avoid producing too-sparse or too-dense histograms.
+
+After displaying the histogram, the program prompts the user with the following message, 'Do you want to visualize for another attribute (Y/N)?' If a user enters 'Y' then the program asks them to select the attribute that needs to be visualised, else if the user enters 'N' then the program displays the main menu, otherwise the program prompts the same message again. Finally, the program quits if the user chooses the option <Q>.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+ you should write a Python script that reads and analyses the ice cream data file (Weekly_Sales.csv) and merge it with the store details file (StoreDetails.csv) and region file (Region.csv) to produce at least FOUR useful graphs that
+give insight into the ice cream sales trends. For example, here are some suggestions:
+
+• show the change in ice cream sales over the period 2010 to 2012
+• compare the trends of all stores in a given year.
+• compare sales against the different store details (i.e. temperature and unemployment) to see what the relationship between them is (data from StoreDetails.csv).
+• compare sales in the five different regions (using the data from the Region.csv to group the stores)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+ you should write a Python script for the ice cream ordering system. Your program must store the prices of the individual items (cones, scoop flavours and toppings). Specifically, the program should do the following:
+• At the start, the program should ask for the customer’s name to personalise and track the order and then get the number of ice creams from the customer.
+• For each ice cream, the cone type, scoop amount, scoop flavour, number and type of toppings should be taken from the customer.
+• At the end the program should display the itemised order with the total price.
+• The program should be able to handle invalid entries inputted (such as incorrect cone type, or invalid number of toppings)
